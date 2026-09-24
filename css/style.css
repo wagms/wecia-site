@@ -98,7 +98,8 @@ h1, h2, h3 { font-family: "Spectral", Georgia, serif; font-weight: 500; line-hei
 .header-inner { display: flex; align-items: center; gap: 1.5rem; height: 74px; }
 
 .brand { display: inline-flex; align-items: center; gap: .7rem; color: var(--text-light); }
-.brand-mark { color: var(--gold); display: inline-grid; place-items: center; }
+.brand-mark { display: inline-grid; place-items: center; }
+.brand-mark img { object-fit: contain; }
 .brand-text { display: flex; flex-direction: column; line-height: 1; }
 .brand-name { font-family: "Spectral", serif; font-weight: 600; font-size: 1.15rem; letter-spacing: .02em; color: var(--text-light); }
 .brand-sub { font-size: .72rem; letter-spacing: .28em; text-transform: uppercase; color: var(--gold); margin-top: .25rem; }
@@ -134,8 +135,8 @@ h1, h2, h3 { font-family: "Spectral", Georgia, serif; font-weight: 500; line-hei
     radial-gradient(90% 70% at 6% 100%, rgba(109,121,137,.16), transparent 60%),
     linear-gradient(180deg, var(--ink-900), var(--ink-850));
 }
-.skyline { position: absolute; right: -60px; bottom: -90px; color: rgba(216,188,133,.10); }
-.skyline svg { width: clamp(340px, 42vw, 560px); height: auto; }
+.skyline { position: absolute; right: -60px; bottom: -90px; opacity: .08; }
+.skyline img { width: clamp(340px, 42vw, 560px); height: auto; }
 .grain { position: absolute; inset: 0; opacity: .04;
   background-image: radial-gradient(currentColor 1px, transparent 1px); background-size: 4px 4px; color: #fff; }
 
@@ -260,7 +261,6 @@ h1, h2, h3 { font-family: "Spectral", Georgia, serif; font-weight: 500; line-hei
 .site-footer { background: var(--ink-900); color: var(--text-light-soft); padding-top: clamp(3rem, 7vh, 4.5rem); }
 .footer-inner { display: grid; grid-template-columns: 1.4fr 1fr 1.4fr; gap: 2.5rem; padding-bottom: 2.5rem; border-bottom: 1px solid rgba(255,255,255,.08); }
 .footer-brand { display: flex; gap: 1rem; align-items: flex-start; }
-.footer-brand .brand-mark { color: var(--gold); }
 .footer-brand .brand-name { font-family: "Spectral", serif; font-size: 1.15rem; color: var(--text-light); }
 .footer-tag { font-size: .78rem; letter-spacing: .1em; color: var(--gold); margin-top: .3rem; }
 .footer-nav { display: flex; flex-direction: column; gap: .7rem; }
