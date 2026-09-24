@@ -120,6 +120,7 @@ h1, h2, h3 { font-family: "Spectral", Georgia, serif; font-weight: 500; line-hei
 .menu-toggle[aria-expanded="true"] span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
 .mobile-nav { display: none; flex-direction: column; gap: .25rem; padding: 1rem clamp(20px,5vw,48px) 1.5rem; background: var(--ink-850); border-bottom: 1px solid rgba(216,188,133,.14); }
+.mobile-nav:not([hidden]) { display: flex; }
 .mobile-nav a { color: var(--text-light-soft); padding: .75rem 0; border-bottom: 1px solid rgba(255,255,255,.05); font-weight: 500; }
 .mobile-nav .btn { margin-top: .8rem; }
 
